@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Haat</title>
+
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .contact-header {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('contact-bg.jpg') center/cover;
+      height: 45vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .contact-header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .contact-header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .contact-section {
+      margin-top: -80px;
+    }
+
+    .contact-card {
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      background: white;
+      padding: 40px;
+      border-left: 5px solid #fb774b;
+    }
+
+    .contact-info i {
+      font-size: 22px;
+      margin-right: 12px;
+      color:#fb774b;
+    }
+
+    .form-control {
+      height: 48px;
+      border-radius: 10px;
+    }
+
+    textarea.form-control {
+      height: 140px;
+    }
+
+    .btn-custom {
+      background:#fb774b;
+      color: white;
+      border-radius: 10px;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    footer {
+      background: #212529;
+      color: #ddd;
+      padding-top: 40px;
+    }
+
+    footer a {
+      color: #ccc;
+      margin-right: 10px;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="#"><i class="fa-solid fa-shop"></i> Haat</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item d-flex align-items-center">
+            <i class="fa-solid fa-magnifying-glass mr-3"></i>
+            <a href="cart.html" class="text-dark"><i class="fa-solid fa-shopping-bag"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Contact Header -->
+  <div class="contact-header">
+    <h1>Get in Touch</h1>
+    <p>We’re here to help and answer your questions.</p>
+  </div>
+
+
+  <!-- Contact Section -->
+  <div class="container contact-section">
+    <div class="row justify-content-center">
+
+      <!-- Contact Info Card -->
+      <div class="col-md-4 mb-4">
+        <div class="contact-card">
+          <h4 class="mb-4 font-weight-bold">Contact Information</h4>
+
+          <p class="contact-info"><i class="fa-solid fa-location-dot"></i> 123 Street, Kokar, Jharkhand</p>
+          <p class="contact-info"><i class="fa-solid fa-phone"></i> +91 9341107338</p>
+          <p class="contact-info"><i class="fa-solid fa-envelope"></i> support@haat.com</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-md-8 mb-5">
+        <div class="contact-card">
+          <h4 class="font-weight-bold mb-4">Send Us a Message</h4>
+
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Your Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name" required />
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Enter your email" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" class="form-control" placeholder="Enter subject" required />
+            </div>
+
+            <div class="form-group">
+              <label>Your Message</label>
+              <textarea class="form-control" placeholder="Write your message" required></textarea>
+            </div>
+
+            <button class="btn btn-custom">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    <div class="container pt-4">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">About Us</h5>
+          <p>We provide high-quality and affordable products. Shop smart, shop with Haat!</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2">Featured</h5>
+          <ul class="list-unstyled text-uppercase">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">New Arrivals</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2">Contact</h5>
+          <p><i class="fa-solid fa-location-dot mr-2"></i> 123 Street, Kokar</p>
+          <p><i class="fa-solid fa-phone mr-2"></i> +91 9341107338</p>
+          <p><i class="fa-solid fa-envelope mr-2"></i> support@haat.com</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Follow Us</h5>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+      </div>
+
+      <div class="text-center py-3 mt-3 border-top border-secondary">
+        <p class="mb-0">Haat eCommerce © 2025. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist

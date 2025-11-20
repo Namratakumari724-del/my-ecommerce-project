@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .product img {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            object-fit: cover;
+        }
+
+        #featured>div.row.mx-auto.container>nav>ul>li.page-item.active>a{
+            background-color: black;
+        }
+
+         #featured>div.row.mx-auto.container>nav>ul>li:nth-child(n):hover>a{
+            background-color: coral;
+            color: #fff;
+         }
+         
+         .pagination a{
+            color: #000;
+         }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-shop"></i> Haat</a>
+
+            <!-- Fixed Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact .html">Contact Us</a></li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-shopping-bag"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="featured" class="my-5 py-5">
+        <div class="container mt-5 py-5">
+            <h2 class="font-weight-bold">Our Featured</h2>
+            <hr>
+            <p>Here you can check out our new products with fair price on Haat.</p>
+        </div>
+
+        <div class="row mx-auto container">
+            <div  onclick="window.location.href='sproduct.html';"class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="shoes.png" alt="Sneakers"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Sneakers</h5>
+                <h4 class="p-price">10,999</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="cap4.avif" alt="Cap"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Stylish Cap</h5>
+                <h4 class="p-price">₹999</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="luxury-purse.png" alt="Bag"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Luxury-purse</h5>
+                <h4 class="p-price">₹2,499</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="watches.png" alt="Frock"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Watches</h5>
+                <h4 class="p-price">₹5,999</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+            <div  onclick="window.location.href='sproduct.html';" class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="bright-white shirt.webp" alt="Sneakers"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">T-Shirt</h5>
+                <h4 class="p-price">₹999</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="watercolor-perfume.webp" alt="Cap"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">watercolor-perfume</h5>
+                <h4 class="p-price">₹999</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="Rolex.png" alt="Bag"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Rolex</h5>
+                <h4 class="p-price">₹12,50,000</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="white purse.png" alt="Frock"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Luxury-purse</h5>
+                <h4 class="p-price">₹1,999</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="Women-High-Heels.png" alt="Sneakers"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Women-High-Heels</h5>
+                <h4 class="p-price">₹14,999</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="sneaker6.png" alt="Cap"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Sneakers</h5>
+                <h4 class="p-price">₹9,949</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="hoodies3.jpg" alt="Bag"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Hoodies</h5>
+                <h4 class="p-price">₹2,499</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="wool-sweater.webp" alt="Frock"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">wool-sweater</h5>
+                <h4 class="p-price">₹2,999</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="kurti5.webp" alt="Sneakers"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Long Kurti</h5>
+                <h4 class="p-price">₹1,999</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="saree1.png" alt="Cap"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Saree</h5>
+                <h4 class="p-price">₹3,499</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="kurti1.png" alt="Bag"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Kurti</h5>
+                <h4 class="p-price">₹1,399</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12 mb-4">
+                <img class="img-fluid mb-3" src="saree-image.png" alt="Frock"
+                    style="height: 300px; object-fit: cover; width: 100%;">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Sillk saree</h5>
+                <h4 class="p-price">₹3,999</h4>
+                <button class="buy-btn btn btn-dark text-uppercase">Buy Now</button>
+            </div>
+            <nav aria-label="...">
+                <ul class="pagination mt-5">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item " aria-current="page">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+
+    <footer class="m-5 py-5 ">
+        <div class="container mx-auto pt-5">
+            <div class="row">
+
+                <!-- Column 1 -->
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <img src="" alt="Logo">
+                    <p class="pt-3">
+                        Fringilla urna porttitor rhoncus dolor purus luctus venenatis lectus magna fringilla diam.
+                        Maecenas ultricies mi eget mauris.
+                    </p>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                    <h5 class="pb-2">Featured</h5>
+                    <ul class="text-uppercase list-unstyled">
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Boys</a></li>
+                        <li><a href="#">Girls</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Clothes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                    <h5 class="pb-2">Contact Us</h5>
+                    <div>
+                        <h6 class="text-uppercase">Address</h6>
+                        <p>123 Street, Kokar, City, Jharkhand</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">Phone</h6>
+                        <p>(+91) 9341107338</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">Email</h6>
+                        <p>jhar@palash.com</p>
+                    </div>
+                </div>
+
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <h5 class="pb-2">Instagaram</h5>
+                    <div class="row">
+                        <img class="img-fluid w-25 h-100 m-2" src="insta2.jpeg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="insta3.jpeg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="4.jpeg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="insta5.jpeg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="insta6.jpeg" alt="">
+
+                    </div>
+                </div>
+                <div class="copyright mt-5">
+                    <div class="row container mx-auto">
+
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <img class="img-fluid w-25 h-100 m-2" src="payment1.png" alt="">
+                            <img class="img-fluid w-25 h-100 m-2" src="payment2.png" alt="">
+                            <img class="img-fluid w-25 h-100 m-2" src="payment3.png" alt="">
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 text-nowrap mb-2">
+                            <p>Haat eCommerce @2021. All Rights Reserved</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                    </div> <!-- ✅ अब row यहाँ बंद हो रही है -->
+                </div>
+
+
+    </footer>
+
+    <!-- Bootstrap 4 JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
